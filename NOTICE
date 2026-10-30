@@ -1,0 +1,6 @@
+WAKL includes adaptations of the Google Maps Commutes sample.
+Copyright 2023 Google LLC.
+Licensed under the Apache License, Version 2.0:
+https://www.apache.org/licenses/LICENSE-2.0
+
+The original notice is retained in src/google-map.js and the generated HTML.
