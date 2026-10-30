@@ -24,24 +24,24 @@ aside,#app.filter-open aside{height:495px;padding-top:12px;overflow:hidden;trans
 .choice.active,.apply,.area-search button{color:#171510}.choice.active{border-color:#93867E}
 </style><style>
 /* Visual refinement only: preserve all existing positions, sizes and behavior. */
-:root{--ink:#3d3530;--green:#93867E;--surface:#f8f4ee;--edge:#e5ddd5}
+:root{--ink:#3d3530;--green:#93867E;--surface:#f8f4ee;--edge:#e5ddd5;--sidebar-surface:#ead8bd;--sidebar-field:#dfcbae;--sidebar-edge:#c8ad8d;--sidebar-text:#66503f}
 body{background:radial-gradient(ellipse at 50% 35%,#f9f5ef 0%,#eee8e1 65%,#e5ddd6 100%)}
 #app{background:var(--surface);color:var(--ink);box-shadow:0 0 0 7px #fcfaf7,0 0 0 8px #d9d0c663,0 24px 65px #69554a26}
 #app:after{background:#a99e9480}
-aside,#app.filter-open aside{background:linear-gradient(160deg,#fffdf8 0%,#f8f3ed 58%,#f0e8e0 100%);border-top:1px solid #ffffffd9;box-shadow:0 -8px 28px #54463812}
+aside,#app.filter-open aside{background:linear-gradient(160deg,#f3e4cc 0%,var(--sidebar-surface) 58%,#e5cfad 100%);border-top:1px solid #fff3df;box-shadow:0 -8px 28px #54463812}
 .panel-grip span,.panel-reopen span{background:#c4b7ac;box-shadow:0 1px 0 #fff9}
 .panel-collapsed .panel-reopen{background:linear-gradient(180deg,#fffdf8,#f5efe8);border-top:1px solid #fffdf8}
-.area-search{background:#eee7df;border:1px solid #e6dcd2;box-shadow:inset 0 1px 3px #5f4a3d06;border-radius:14px}
-.area-search:focus-within{border-color:#b0a093;box-shadow:0 0 0 3px #93867e12,inset 0 1px 3px #5f4a3d06}
-.area-search input{color:#433831}
-.area-search input::placeholder{color:#9b8e84}
-.area-search button{background:linear-gradient(145deg,#b3a49a,#a29388);color:#28221d;border:1px solid #a9988b80;border-radius:10px;box-shadow:0 2px 5px #65514413,inset 0 1px 0 #fff5}
-.group label{color:#665a51;font-weight:500;letter-spacing:-.2px}
-.choice{position:relative;background:linear-gradient(160deg,#fffdfa,#f9f5f0);color:#8b7d72;border:1px solid #e5dcd3;border-radius:11px;box-shadow:0 1px 2px #69564a05,inset 0 1px 0 #fff;transition:background .18s,border-color .18s,box-shadow .18s,color .18s}
-.choice:hover{background:#f1e8df;border-color:#cbbcaf}
+.area-search{background:var(--sidebar-field);border:1px solid var(--sidebar-edge);box-shadow:inset 0 1px 3px #5f4a3d0a;border-radius:14px}
+.area-search:focus-within{border-color:#9f8165;box-shadow:0 0 0 3px #93867e18,inset 0 1px 3px #5f4a3d0a}
+.area-search input{color:var(--sidebar-text)}
+.area-search input::placeholder{color:#907861}
+.area-search button{background:#ead9bf;color:var(--sidebar-text);border:1px solid #ad9275;border-radius:10px;box-shadow:0 1px 3px #65514413,inset 0 1px 0 #fff6}
+.group label{color:var(--sidebar-text);font-weight:600;letter-spacing:-.2px}
+.choice{position:relative;background:#edddc5;color:#806b59;border:1px solid #cfb797;border-radius:11px;box-shadow:0 1px 2px #69564a08,inset 0 1px 0 #fff7;transition:background .18s,border-color .18s,box-shadow .18s,color .18s}
+.choice:hover{background:#e4cfb2;border-color:#b79a79}
 .choice.active{background:linear-gradient(145deg,#e5d8cc,#d9c9bc);border-color:#b5a08f;color:#4c3c31;font-weight:600;box-shadow:inset 0 1px 0 #fff8,0 2px 5px #6551440b}
 .choice.active:after{content:'';position:absolute;top:5px;right:5px;width:3px;height:3px;border-radius:50%;background:#93867E}
-.apply,.detail-content .apply{background:linear-gradient(125deg,#b2a399 0%,#a2958b 45%,#93867E 100%);color:#29211b;border:1px solid #8a796d3d;border-radius:15px;letter-spacing:.25px;box-shadow:0 5px 13px #6f594721,inset 0 1px 0 #fff6;transition:filter .18s,box-shadow .18s}
+.apply,.detail-content .apply{background:linear-gradient(110deg,#f2cda4 0%,#d7b58f 45%,#75634d 100%);color:#29211b;border:1px solid #987a5d;border-radius:15px;letter-spacing:.25px;box-shadow:0 5px 13px #6f594721,inset 0 1px 0 #fff6;transition:filter .18s,box-shadow .18s}
 .apply:hover,.area-search button:hover{filter:brightness(1.04)}
 .apply:active{box-shadow:0 2px 5px #6f594718,inset 0 1px 3px #51403515}
 .settings-button,.area-refresh,.circle{background:linear-gradient(145deg,#fffefb,#f5eee6);color:#78685c;border:1px solid #fdf9f2;box-shadow:0 3px 12px #705c4a16,inset 0 1px 0 #fff}
