@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+build_dir=".figma/make/static-dist"
+
+node build.cjs
+rm -rf "$build_dir"
+mkdir -p "$build_dir"
+cp index.html WAKL.html "$build_dir/"
+
+[[ -d "$build_dir" ]] || {
+  echo "Expected build output at $build_dir" >&2
+  exit 1
+}
+
+figma make deploy-preview --build-dir "$build_dir"

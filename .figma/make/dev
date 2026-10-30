@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+node build.cjs
+exec python3 -m http.server "$PORT" --bind 0.0.0.0
